@@ -5,7 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Lawrence Jnr",
+            "name": "Lawrence Onah Jnr",
             "email": "paplow01@gmail.com"
         }
     ],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Paplow\\Autohelper\\": "src/AutoHelper/"
+            "Paplow\\": "src/"
         }
     },
     "minimum-stability": "stable"
