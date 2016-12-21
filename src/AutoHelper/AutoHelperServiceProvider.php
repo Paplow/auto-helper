@@ -1,6 +1,6 @@
 <?php
 
-namespace Paplow\Autohelper;
+namespace Paplow\AutoHelper;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -22,7 +22,7 @@ class AutoHelperServiceProvider extends ServiceProvider
     {
 
         $this->publishes([
-            __DIR__.'/../../config/auto-helper.php' => \config_path('auto-helper.php'),
+            __DIR__.'/../config/auto-helper.php' => \config_path('auto-helper.php'),
         ], 'config');
 
     }
@@ -34,12 +34,14 @@ class AutoHelperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $dirName = trim(base_path($this->app['config']['auto-helper']['helper_path']));
-        if (!is_dir($dirName))
-            mkdir(base_path($dirName));
+        if ($this->app['config']['auto-helper']['helper_path']) {
+            $dirName = trim(base_path($this->app['config']['auto-helper']['helper_path']));
+            if (!is_dir($dirName))
+                mkdir($dirName);
 
-        foreach (glob($dirName."/*.php") as $filename) {
-            require_once($filename);
+            foreach (glob($dirName."/*.php") as $filename) {
+                require_once($filename);
+            }
         }
     }
 
