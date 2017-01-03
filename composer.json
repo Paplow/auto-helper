@@ -1,6 +1,6 @@
 {
     "name": "paplow/auto-helper",
-    "description": "This will help add helper functions and classes automatically to your laravel project.",
+    "description": "Add helper functions and classes easily to your laravel project.",
     "license": "MIT",
     "authors": [
         {
