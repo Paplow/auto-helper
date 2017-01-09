@@ -35,8 +35,8 @@ class AutoHelperServiceProvider extends ServiceProvider
     public function register()
     {
         // Get the path from the configuration file
-        if ($this->app['config']['auto-helper']['helper_path']) {
-            $dirName = trim(base_path($this->app['config']['auto-helper']['helper_path']));
+        if (config('auto-helper.helper_path')) {
+            $dirName = trim(base_path(config('auto-helper.helper_path')));
 
             // Create directory if it doesn't already exists
             if (!is_dir($dirName))
