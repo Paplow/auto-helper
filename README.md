@@ -17,7 +17,7 @@ And then, if using Laravel 5, include the service provider within `config/app.ph
 
 Then Run `php artisan vendor:publish`.
 
-That will generate the configuration file `config/auto-helper` which holds the path where you would like to keeps your helper classes / functions.
+That will generate the configuration file `config/auto-helper` which holds the path where you would like to keep your helper classes / functions.
 
 ## How to change default path
 
