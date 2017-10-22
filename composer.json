@@ -17,5 +17,12 @@
             "Paplow\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Paplow\\AutoHelper\\AutoHelperServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable"
 }

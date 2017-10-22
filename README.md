@@ -7,7 +7,8 @@ First, pull in the package through Composer.
 
 Run `composer require paplow/auto-helper`
 
-And then, if using Laravel 5, include the service provider within `config/app.php`.
+If you are runnung **Laravel v5.5** and **above** you can skip this step
+else include the service provider to you providers array in `config/app.php`.
 
 ```php
 'providers' => [
