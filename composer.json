@@ -1,10 +1,10 @@
 {
-    "name": "paplow/auto-helper",
+    "name": "kodjunkie/auto-helper",
     "description": "Add helper functions and classes easily to your laravel project.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Lawrence Onah Jnr",
+            "name": "Lawrence Onah",
             "email": "paplow01@gmail.com"
         }
     ],
@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Paplow\\": "src/"
+            "Kodjunkie\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Paplow\\AutoHelper\\AutoHelperServiceProvider"
+                "Kodjunkie\\AutoHelper\\AutoHelperServiceProvider"
             ]
         }
     },

@@ -5,25 +5,22 @@ Easily add helper functions and classes to your laravel project.
 
 First, pull in the package through Composer.
 
-Run `composer require paplow/auto-helper`
+    composer require kodjunkie/auto-helper
 
-If you are runnung **Laravel v5.5** and **above** you can skip this step
+If you are running **Laravel v5.5** and **above** you can skip this step
 else include the service provider to you providers array in `config/app.php`.
 
 ```php
 'providers' => [
-    Paplow\AutoHelper\AutoHelperServiceProvider::class,
+    Kodjunkie\AutoHelper\AutoHelperServiceProvider::class,
 ];
 ```
 
-Then Run `php artisan vendor:publish`.
-
-That will generate the configuration file `config/auto-helper` which holds the path where you would like to keep your helper classes / functions.
+Then run `php artisan vendor:publish`
+that will generate the configuration file `config/auto-helper.php` which holds the path where you would like to keep 
+your helper classes / functions.
 
 ## How to change default path
 
-You can change it directly from the configuration file
-
-OR
-
-Add `HELPER_PATH=Your path` to your .env file.
+You can change it directly from the configuration file `config/auto-helper.php` OR add `HELPER_PATH=Your path` to your
+ `.env` file.
